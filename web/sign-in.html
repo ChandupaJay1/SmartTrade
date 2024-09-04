@@ -59,17 +59,18 @@
                     <div class="axil-signin-form">
                         <h3 class="title">Sign in to Smart Trade</h3>
                         <p class="b2 mb--55">Sign in to Smart Trade to access your account and manage your trades securely.</p>
+                        <p class="text-danger" id="message" ></p>
                         <form class="singin-form">
                             <div class="form-group">
                                 <label>Email</label>
-                                <input type="email" class="form-control" name="email" value="">
+                                <input type="email" class="form-control" id="email" value="">
                             </div>
                             <div class="form-group">
                                 <label>Password</label>
-                                <input type="password" class="form-control" name="password" value="">
+                                <input type="password" class="form-control" id="password" value="">
                             </div>
                             <div class="form-group d-flex align-items-center justify-content-between">
-                                <button type="submit" class="axil-btn btn-bg-primary submit-btn">Sign In</button>
+                                <button type="button" onclick="signIn();" class="axil-btn btn-bg-primary submit-btn">Sign In</button>
                                 <a href="verify-account.html" class="forgot-btn">Verify Your Account</a>
                             </div>
                         </form>
@@ -103,6 +104,7 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/sign-in.js"></script>
 
 </body>
 

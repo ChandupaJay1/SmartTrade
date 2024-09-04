@@ -1,58 +1,43 @@
 package dto;
 
+import com.google.gson.annotations.Expose;
 import java.io.Serializable;
+
 
 public class User_DTO implements Serializable {
 
-    private int id;
-
-    private String first_name;
-
-    private String last_name;
-
+    @Expose
+    private String firstName;
+    @Expose
+    private String lastName;
+    @Expose
     private String email;
 
+    @Expose(deserialize = true, serialize = false)
     private String password;
-
-    private String verification;
 
     public User_DTO() {
     }
 
-
-    public int getId() {
-        return id;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-
-    public String getFirst_name() {
-        return first_name;
+    public String getLastName() {
+        return lastName;
     }
 
-
-    public void setFirst_name(String first_name) {
-        this.first_name = first_name;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
-
-
-    public String getLast_name() {
-        return last_name;
-    }
-
-
-    public void setLast_name(String last_name) {
-        this.last_name = last_name;
-    }
-
 
     public String getEmail() {
         return email;
     }
-
 
     public void setEmail(String email) {
         this.email = email;
@@ -62,19 +47,8 @@ public class User_DTO implements Serializable {
         return password;
     }
 
-
     public void setPassword(String password) {
         this.password = password;
-    }
-
-
-    public String getVerification() {
-        return verification;
-    }
-
-
-    public void setVerification(String verification) {
-        this.verification = verification;
     }
 
 }
