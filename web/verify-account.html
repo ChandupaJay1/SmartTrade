@@ -62,13 +62,14 @@
                     <div class="axil-signin-form">
                         <h3 class="title">Verify Your Account</h3>
                         <p class="b2 mb--55">Please verify your email to secure your account and unlock all features. Click the button below to complete the process.</p>
+                        <p class="text-danger" id="message" ></p>
                         <form class="singin-form">
                             <div class="form-group">
                                 <label>Verification Code</label>
-                                <input type="text" class="form-control" name="verificationCode" value="">
+                                <input type="text" class="form-control" id="verification" value="">
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="axil-btn btn-bg-primary submit-btn">Verify & Continue</button>
+                                <button type="button" onclick="verifyAccount();" class="axil-btn btn-bg-primary submit-btn">Verify & Continue</button>
                             </div>
                         </form>
                     </div>
@@ -101,6 +102,7 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/verify-account.js"></script>
 
 </body>
 

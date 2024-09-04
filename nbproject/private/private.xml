@@ -3,8 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/chand/Documents/NetBeansProjects/SmartTrade/src/java/controller/Email.java</file>
-            <file>file:/C:/Users/chand/Documents/NetBeansProjects/SmartTrade/src/java/model/Mail.java</file>
+            <file>file:/C:/Users/chand/Documents/NetBeansProjects/SmartTrade/src/java/dto/User_DTO.java</file>
+            <file>file:/C:/Users/chand/Documents/NetBeansProjects/SmartTrade/web/sign-up.html</file>
+            <file>file:/C:/Users/chand/Documents/NetBeansProjects/SmartTrade/src/java/entity/User.java</file>
+            <file>file:/C:/Users/chand/Documents/NetBeansProjects/SmartTrade/web/assets/js/sign-up.js</file>
+            <file>file:/C:/Users/chand/Documents/NetBeansProjects/SmartTrade/src/java/controller/SignUp.java</file>
         </group>
     </open-files>
 </project-private>
