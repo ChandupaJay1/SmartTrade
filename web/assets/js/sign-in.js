@@ -1,5 +1,4 @@
 async function signIn() {
-
     const user_dto = {
         email: document.getElementById("email").value,
         password: document.getElementById("password").value,
@@ -19,7 +18,7 @@ async function signIn() {
 
     if (response.ok) {
         const json = await response.json();
-        
+
         console.log(json);
 
         if (json.success) {
@@ -29,7 +28,7 @@ async function signIn() {
         } else {
             if (json.content === "Unverified") {
                 window.location = "verify-account.html"
-          
+
             } else {
                 document.getElementById("message").innerHTML = json.content;
             }
