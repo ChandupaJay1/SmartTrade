@@ -25,6 +25,7 @@
         <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/vendor/base.css">
         <link rel="stylesheet" href="assets/css/style.min.css">
+        <link rel="stylesheet" href="assets/css/notification.css"/>
 
     </head>
 
@@ -206,7 +207,7 @@
                         <div class="axil-dashboard-author">
                             <div class="media">
                                 <div class="thumbnail">
-                                    <img src="./assets/images/avatar.png" alt="Hello Annie">
+                                    <img src="./assets/images/avatar.png" style="height: 48px" alt="Hello Annie">
                                 </div>
                                 <div class="media-body">
                                     <h5 class="title mb-0">Hello Name</h5>
@@ -235,31 +236,30 @@
                                     <div class="tab-pane fade" id="nav-add-product" role="tabpanel">
                                         <div class="axil-dashboard-overview">
                                             <div class="welcome-text">Create New Product</div>
+                                            <p class="text-danger" id="message"></p>
 
                                             <form class="account-details-form">
                                                 <div class="row">
                                                     <div class="col-lg-6">
                                                         <div class="form-group">
                                                             <label>Category</label>
-                                                            <select id="select-category" onchange="updateModels();">
-                                                                <option value="0">Select....</option>
-
+                                                            <select id="category-select" onchange="updateModels();">
+                                                                <option value="0">Select Category</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6">
                                                         <div class="form-group">
                                                             <label>Model</label>
-                                                            <select id="select-model">
-                                                                <option value="0">Select...</option>
-                                                                
+                                                            <select id="model-select">
+                                                                <option value="0">Select Model</option>
                                                             </select>
                                                         </div>
                                                     </div>                                                        
                                                     <div class="col-12">
                                                         <div class="form-group">
                                                             <label>Title</label>
-                                                            <input type="text" class="form-control" id="title" value="">
+                                                            <input type="text" class="form-control" value="" id="title">
                                                         </div>
                                                     </div>
                                                     <div class="col-12">
@@ -272,16 +272,16 @@
                                                     <div class="col-lg-6">
                                                         <div class="form-group">
                                                             <label>Storage</label>
-                                                            <select id ="select-storage" >
-                                                                <option value="0">Select</option>
+                                                            <select id="storage-select">
+                                                                <option value="0">Select Storage</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6">
                                                         <div class="form-group">
                                                             <label>Color</label>
-                                                            <select id="select-color">
-                                                               <option value="0">Select</option>
+                                                            <select id="color-select">
+                                                                <option value="0">Select Color</option>
                                                             </select>
                                                         </div>
                                                     </div> 
@@ -289,9 +289,8 @@
                                                     <div class="col-lg-4">
                                                         <div class="form-group">
                                                             <label>Condition</label>
-                                                            <select id="select-condition">
-                                                                <option value="0">Select</option>
-                                                                
+                                                            <select id="condition-select">
+                                                                <option value="0">Select Condition</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -318,7 +317,7 @@
                                                         <label>Image 2</label>
                                                         <input class="form-control b2" type="file" accept="image/*" id="image2">
                                                     </div>
-                                                    
+
                                                     <div class="col-lg-4">
                                                         <label>Image 3</label>
                                                         <input class="form-control b2" type="file" accept="image/*" id="image3">
@@ -732,7 +731,12 @@
 
         <!-- Main JS -->
         <script src="assets/js/main.js"></script>
+
         <script src="assets/js/my-account.js"></script>
+        
+        <!--notification-->
+        <script src="assets/js/notification.js"></script>
+
 
     </body>
 

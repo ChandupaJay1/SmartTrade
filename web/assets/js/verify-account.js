@@ -1,9 +1,8 @@
 async function verifyAccount() {
 
     const dto = {
-        verification: document.getElementById("verification").value,
+        verification: document.getElementById("verification").value
     };
-
 
     const response = await fetch(
             "Verification",
@@ -18,19 +17,13 @@ async function verifyAccount() {
 
     if (response.ok) {
         const json = await response.json();
-        // Handle the JSON response
 
         if (json.success) {
-
             window.location = "index.html";
-
         } else {
-
             document.getElementById("message").innerHTML = json.content;
-
         }
-
     } else {
-        document.getElementById("message").innerHTML = "Please try again Later ";
+        document.getElementById("message").innerHTML = "Please try agin later";
     }
 }

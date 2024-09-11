@@ -60,26 +60,27 @@
                             <h3 class="title">I'm New Here</h3>
                             <p class="b2 mb--10">Create a new Smart Trade account to start shopping and manage your trades with ease.</p>
                             
-                            <p class="text-danger" id="message" ></p>
+                            <p class="text-danger" id="message"></p>
+                            
                             <form class="singin-form">
                                 <div class="form-group">
                                     <label>First Name</label>
-                                    <input type="text" class="form-control" id="firstName" >
+                                    <input type="text" class="form-control" id="first_name" value="">
                                 </div>
                                 <div class="form-group">
                                     <label>Last Name</label>
-                                    <input type="text" class="form-control" id="lastName" >
+                                    <input type="text" class="form-control" id="last_name" value="">
                                 </div>
                                 <div class="form-group">
                                     <label>Email</label>
-                                    <input type="email" class="form-control" id="email">
+                                    <input type="email" class="form-control" id="email" value="">
                                 </div>
                                 <div class="form-group">
                                     <label>Password</label>
-                                    <input type="password" class="form-control" id="password" >
+                                    <input type="password" class="form-control" id="password" value="">
                                 </div>
                                 <div class="form-group">
-                                    <button type="button" onclick="signUP();" class="axil-btn btn-bg-primary submit-btn">Create Account</button>
+                                    <button type="button" class="axil-btn btn-bg-primary submit-btn" onclick="signUp()">Create Account</button>
                                 </div>
                             </form>
                         </div>
@@ -112,6 +113,7 @@
 
         <!-- Main JS -->
         <script src="assets/js/main.js"></script>
+        
         <script src="assets/js/sign-up.js"></script>
 
     </body>

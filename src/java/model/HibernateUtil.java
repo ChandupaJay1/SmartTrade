@@ -9,7 +9,7 @@ public class HibernateUtil {
 
     static {
         try {
-            sessionFactory = new Configuration().configure().buildSessionFactory(); //Hibernate Engine connecting to mysql
+            sessionFactory = new Configuration().configure().buildSessionFactory();
         } catch (Throwable ex) {
             System.err.println("Initial SessionFactory creation failed." + ex);
             throw new ExceptionInInitializerError(ex);
@@ -17,10 +17,10 @@ public class HibernateUtil {
     }
 
     public static SessionFactory getSessionFactory() {
-        return sessionFactory; //Connection return statement
+        return sessionFactory;
     }
 
     public static void shutdown() {
-        getSessionFactory().close(); //Hibernate Session shutdown
+        getSessionFactory().close();
     }
 }
