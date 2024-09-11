@@ -8,19 +8,13 @@ import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import static javax.ws.rs.client.Entity.html;
 
-
-/**
- *
- * @author chand
- */
 public class Mail {
-    
+
     private static final String APP_EMAIL = "Chandupajayalath20@gmail.com";
     private static final String APP_PASSWORD = "bqax ziis lrnn hiwp";
 
-    public static void sendMail(String email, String subject, String content) {
+    public static void sendMail(String email, String subject, String htmlContent) {
 
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
@@ -40,8 +34,8 @@ public class Mail {
             message.setFrom(new InternetAddress(Mail.APP_EMAIL));
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(email));
             message.setSubject(subject);
-//            message.setText(content);
-            message.setContent("<h1>blah blah blah</h1>", "text/html");
+            //message.setText(content);
+            message.setContent(htmlContent, "text/html");
 
             Transport.send(message);
             System.out.println("Email sent successfully!");
@@ -50,6 +44,4 @@ public class Mail {
             throw new RuntimeException(e);
         }
     }
-
-    
 }

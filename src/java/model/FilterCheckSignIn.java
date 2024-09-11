@@ -11,16 +11,11 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author chand
- */
 @WebFilter(urlPatterns = {"/my-account.html"})
-public class FilterCheckSignIn implements Filter {
+public class FilterCheckSignin implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-
     }
 
     @Override
@@ -31,20 +26,14 @@ public class FilterCheckSignIn implements Filter {
 
         if (httpServletRequest.getSession().getAttribute("user") != null) {
             chain.doFilter(request, response);
-        }else{
+        } else {
             httpServletResponse.sendRedirect("sign-in.html");
         }
 
-        }
+    }
 
-        @Override
-        public void destroy
-        
-        
-    
-
-() {
-
+    @Override
+    public void destroy() {
     }
 
 }

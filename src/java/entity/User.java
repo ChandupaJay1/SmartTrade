@@ -17,20 +17,24 @@ public class User implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "first_name", length = 20, nullable = false)
+    @Column(name = "first_name", length = 45, nullable = false)
     private String first_name;
 
-    @Column(name = "last_name", length = 20, nullable = false)
+    @Column(name = "last_name", length = 45, nullable = false)
     private String last_name;
 
     @Column(name = "email", length = 45, nullable = false)
     private String email;
 
-    @Column(name = "password", length = 16, nullable = false)
+    @Column(name = "password", length = 45, nullable = false)
     private String password;
 
     @Column(name = "verification", length = 10, nullable = false)
     private String verification;
+
+    public User() {
+
+    }
 
     /**
      * @return the id
@@ -115,5 +119,4 @@ public class User implements Serializable {
     public void setVerification(String verification) {
         this.verification = verification;
     }
-
 }
