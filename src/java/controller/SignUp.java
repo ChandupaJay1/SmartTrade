@@ -83,7 +83,7 @@ public class SignUp extends HttpServlet {
                         + "                <p style=\"color: #666666;\">Please use the verification code below to complete your registration:</p>\n"
                         + "                <h3 style=\"color: #007bff; font-size: 24px; margin: 20px 0;\">" + code + "</h3>\n"
                         + "                <p style=\"color: #666666;\">If you didn’t request this, you can safely ignore this email.</p>\n"
-                        + "                <p style=\"color: #666666;\">Contact Us on Facebook <b style=\"color: #007bff;\">(Delta Codex Software Solutions)</b></p>\n"
+                        + "                <p style=\"color: #666666;\">Contact Us on Facebook <b style=\"color: #007bff;\">(NerdTech)</b></p>\n"
                         + "            </td>\n"
                         + "        </tr>\n"
                         + "    </table>\n"
