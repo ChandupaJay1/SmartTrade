@@ -1,0 +1,35 @@
+[1mdiff --git a/.vscode/extensions.json b/.vscode/extensions.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..da845d8[m
+[1m--- /dev/null[m
+[1m+++ b/.vscode/extensions.json[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m    "recommendations": [[m
+[32m+[m[32m        "redhat.vscode-community-server-connector"[m
+[32m+[m[32m    ][m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/nbproject/private/private.xml b/nbproject/private/private.xml[m
+[1mindex d6f7885..a700423 100644[m
+[1m--- a/nbproject/private/private.xml[m
+[1m+++ b/nbproject/private/private.xml[m
+[36m@@ -3,13 +3,11 @@[m
+     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>[m
+     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">[m
+         <group>[m
+[31m-            <file>file:/C:/Users/chand/Documents/NetBeansProjects/SmartTrade/src/java/controller/Checkout.java</file>[m
+[31m-            <file>file:/C:/Users/chand/Documents/NetBeansProjects/SmartTrade/web/checkout.html</file>[m
+[31m-            <file>file:/C:/Users/chand/Documents/NetBeansProjects/SmartTrade/src/java/entity/Product_Order.java</file>[m
+[31m-            <file>file:/C:/Users/chand/Documents/NetBeansProjects/SmartTrade/src/java/controller/VerifyPayment.java</file>[m
+[31m-            <file>file:/C:/Users/chand/Documents/NetBeansProjects/SmartTrade/web/assets/js/verify-account.js</file>[m
+[31m-            <file>file:/C:/Users/chand/Documents/NetBeansProjects/SmartTrade/web/assets/js/checkout.js</file>[m
+[31m-            <file>file:/C:/Users/chand/Documents/NetBeansProjects/SmartTrade/web/assets/js/cart.js</file>[m
+[32m+[m[32m            <file>file:/C:/Users/chand/Documents/NetBeansProjects/SmartTrade/src/java/model/Mail.java</file>[m
+[32m+[m[32m            <file>file:/C:/Users/chand/Documents/NetBeansProjects/SmartTrade/src/java/model/Payhere.java</file>[m
+[32m+[m[32m            <file>file:/C:/Users/chand/Documents/NetBeansProjects/SmartTrade/web/verify-account.html</file>[m
+[32m+[m[32m            <file>file:/C:/Users/chand/Documents/NetBeansProjects/SmartTrade/src/java/model/Validation.java</file>[m
+[32m+[m[32m            <file>file:/C:/Users/chand/Documents/NetBeansProjects/SmartTrade/src/java/model/Validations.java</file>[m
+         </group>[m
+     </open-files>[m
+ </project-private>[m
